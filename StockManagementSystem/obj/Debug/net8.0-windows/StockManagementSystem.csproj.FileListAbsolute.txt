@@ -1,0 +1,11 @@
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.Form1.resources
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.MenuUi.resources
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.csproj.GenerateResource.cache
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.AssemblyInfoInputs.cache
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.AssemblyInfo.cs
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.csproj.CoreCompileInputs.cache
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.CategoryUi.resources
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.CompanyUi.resources
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.ItemUi.resources
+E:\StockManagementSystem\obj\Debug\net8.0-windows\StockManagementSystem.LoginUi.resources
