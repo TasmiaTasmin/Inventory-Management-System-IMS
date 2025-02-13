@@ -20,7 +20,7 @@ namespace StockManagementSystem.Repository
         public ViewRepository()
         {
             //connectionString = @"Server=PC-301-17\SQLEXPRESS ; Database=StockManagementDB  ;Integrated Security=True  ";
-            connectionString = @"Server=DESKTOP-U3U0F7M ;Database=StockManagementDB;Integrated Security=True";
+            connectionString = @"Server=localhost\SQLEXPRESS ;Database=StockManagementDB;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
         }
         public DataTable LoadStockOutToDataGridView(string fromDate, string toDate, string action)

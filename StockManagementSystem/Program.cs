@@ -10,8 +10,13 @@ namespace StockManagementSystem
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            ApplicationConfiguration.Initialize();          
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
+            Application.Run(new MenuUi());
+            //Application.Run(new FrontUi());
         }
     }
 }
+

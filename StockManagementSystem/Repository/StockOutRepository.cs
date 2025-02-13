@@ -19,7 +19,7 @@ namespace StockManagementSystem.Repository
         DataTable dataTable;
         public StockOutRepository()
         {
-            connectionString = @"Server=DESKTOP-U3U0F7M; Database=StockManagementDB; Integrated Security=True";
+            connectionString = @"Server=localhost\SQLEXPRESS; Database=StockManagementDB; Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
         }
         public DataTable DataBindCompanyToComboBox()

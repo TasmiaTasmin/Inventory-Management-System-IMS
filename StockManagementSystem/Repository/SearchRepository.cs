@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using StockManagementSystem.Models;
 using System.Data;
 using System.Data.SqlClient;
+
 namespace StockManagementSystem.Repository
 {
     public class SearchRepository
@@ -18,7 +19,7 @@ namespace StockManagementSystem.Repository
         DataTable dataTable;
         public SearchRepository()
         {
-            connectionString = @"Server=DESKTOP-U3U0F7M;Database=StockManagementDB;Integrated Security=True";
+            connectionString = @"Server=localhost\SQLEXPRESS;Database=StockManagementDB;Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
         }
         public DataTable LoadCompanyToComboBox()

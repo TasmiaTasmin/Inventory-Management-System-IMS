@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using StockManagementSystem.Models;
+using StockManagementSystem.Helpers;
+
 namespace StockManagementSystem.Repository
 {
     public class CategoryRepository
@@ -17,17 +19,25 @@ namespace StockManagementSystem.Repository
         SqlDataAdapter sqlDataAdapter;
         DataTable dataTable;
 
+        private readonly DatabaseHelper _databaseHelper;
+
+        //public CategoryRepository()
+        //{
+        //    _databaseHelper = new DatabaseHelper();
+        //}
+
         public CategoryRepository()
         {
-            connectionString = @"Server=DESKTOP-U3U0F7M; Database=StockManagementDB; Integrated Security=True";
+            connectionString = @"Server=localhost\SQLEXPRESS; Database=StockManagementDB; Integrated Security=True";
             sqlConnection = new SqlConnection(connectionString);
+            _databaseHelper = new DatabaseHelper();
         }
+
         public int Update(Category category)
         {
             int isExecuted = 0;
             try
             {
-                //2
                 sqlCommand = new SqlCommand();
                 commandString = "UPDATE Categories SET Name =  '" + category.Name + "' WHERE ID = " + category.ID + "";
                 sqlCommand.CommandText = commandString;
@@ -38,7 +48,7 @@ namespace StockManagementSystem.Repository
             }
             catch (Exception exception)
             {
-                //MessageBox.Show(exception.Message);
+                MessageBox.Show(exception.Message);
             }
             return isExecuted;
         }
@@ -60,10 +70,17 @@ namespace StockManagementSystem.Repository
             }
             catch (Exception exception)
             {
-                //MessageBox.Show(exception.Message);
+                MessageBox.Show(exception.Message);
             }
             return dataTable;
         }
+
+        public DataTable GetAllCategories()
+        {
+            string query = "SELECT * FROM Categories";
+            return _databaseHelper.ExecuteQuery(query);
+        }
+
         public int Insert(Category category)
         {
             int isExecuted = 0;

@@ -7,7 +7,6 @@ using System.Data;
 using System.Data.SqlClient;
 using StockManagementSystem.Models;
 
-
 namespace StockManagementSystem.Repository
 {
     public class ItemRepository
@@ -22,7 +21,7 @@ namespace StockManagementSystem.Repository
 
         public ItemRepository()
         {           
-            connectionString = @"Server=DESKTOP-U3U0F7M; Database=StockManagementDB; Integrated Security=True";
+            connectionString = @"Server=localhost\SQLEXPRESS; Database=StockManagementDB; Integrated Security=True";
             
             sqlConnection = new SqlConnection(connectionString);
         }

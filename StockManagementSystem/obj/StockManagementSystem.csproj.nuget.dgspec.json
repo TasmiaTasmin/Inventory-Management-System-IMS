@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\StockManagementSystem\\StockManagementSystem.csproj": {}
+    "E:\\GitHub\\Inventory-Management-System-IMS\\StockManagementSystem\\StockManagementSystem.csproj": {}
   },
   "projects": {
-    "E:\\StockManagementSystem\\StockManagementSystem.csproj": {
+    "E:\\GitHub\\Inventory-Management-System-IMS\\StockManagementSystem\\StockManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\StockManagementSystem\\StockManagementSystem.csproj",
+        "projectUniqueName": "E:\\GitHub\\Inventory-Management-System-IMS\\StockManagementSystem\\StockManagementSystem.csproj",
         "projectName": "StockManagementSystem",
-        "projectPath": "E:\\StockManagementSystem\\StockManagementSystem.csproj",
+        "projectPath": "E:\\GitHub\\Inventory-Management-System-IMS\\StockManagementSystem\\StockManagementSystem.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\StockManagementSystem\\obj\\",
+        "outputPath": "E:\\GitHub\\Inventory-Management-System-IMS\\StockManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
